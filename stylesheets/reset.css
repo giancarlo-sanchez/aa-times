@@ -67,3 +67,9 @@ button,
 input[type="submit"] {
   cursor: pointer;
 }
+
+.search--hidden{
+  display:none;
+  border:1px solid #e2e2e2;
+  border-radius: 2px;
+}

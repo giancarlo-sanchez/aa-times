@@ -1,0 +1,11 @@
+.main__ul{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.main__all, .main__alumni, .main__talentmatch, .main__sales, .main__marketing, .main__online, .main__jump, .main__NY, .main__SF, .main__SWEOnline, .main__world{
+    padding-left: 10px;
+    padding-right: 10px;
+}

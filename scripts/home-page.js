@@ -12,9 +12,29 @@ function makeDate () {
     return fullDate;
 }
 
+function closeDropDown() {
+    return window.addEventListener("click", event => {
+        const dropDown = document.getElementsByClassName("pref");
+        dropDown[0].classList.add("pref--hidden");
+        console.log("hello!");
+    });
+}
+
 window.addEventListener('DOMContentLoaded', () => {
 
 const todayDate = document.getElementsByClassName("masthead__date");
 todayDate[0].innerHTML = `${makeDate()}`;
+
+    const dropDown = document.getElementsByClassName("pref");
+    dropDown[0].classList.add("pref--hidden");
+
+    const gearIcon = document.getElementsByClassName("masthead__actions-icon");
+    gearIcon[0].addEventListener("click", event => {
+        event.stopPropagation();
+        dropDown[0].classList.remove("pref--hidden");  
+        closeDropDown();
+    });
+
+    const searchBar = document.getElementsByClassName
 
 });

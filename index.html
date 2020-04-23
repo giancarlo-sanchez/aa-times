@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/main-styles.css">
     
-    <script type="text/javascript" src="home-page.js"></script>
+    <script type="text/javascript" src="scripts/home-page.js"></script>
     <title>App Academy Times</title>
 
 </head>
@@ -20,8 +20,13 @@
             <div class="masthead__menuButton">
                 <i class="fa fa-bars"></i>
             </div>
+            
             <div class="masthead__searchButton">
-                <i class="fa fa-search"></i>
+                <i class="fa fa-search"></i>            
+            </div>
+            <div class="search">
+                <input type="search" placeholder="Search">
+                <button type="search">Go</button>
             </div>
         </div>
 
@@ -30,9 +35,30 @@
             <button>Log In</button>
             <div class="masthead__actions-icon">
                 <i class="fas fa-cog"></i>
+
+                <div class="pref">
+                    <div class="pref__section">
+                        <div class="pref__section-header">Edition</div>
+                        <ul>
+                            <li class="pref__section-link"><a href="#">CSS</a></li>
+                            <li class="pref__section-link"><a href="#">HTML</a></li>
+                            <li class="pref__section-link"><a href="#">JavaScript</a></li>
+                            <li class="pref__section-link"><a href="#">Python</a></li>
+                        </ul>
+                    </div>
+                    <div class="pref__section">
+                        <div class="pref__section-header">Help</div>
+                        <ul>
+                            <li class="pref__section-link"><a href="#">FAQ</a></li>
+                            <li class="pref__section-link"><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
             </div>
         </div>
 
+        
         <div class="masthead__technologies">
             <div class="masthead__technology-list">
                 <span class="masthead__technology-CSS">CSS</span>
@@ -53,9 +79,85 @@
         </div>
         
     </div>
-
+       
     </header>
-    <main></main>
+
+    <main>
+        
+        <nav class="main">
+            <ul class="main__ul">
+                <li class="main__world"><a href="/world">World</a></li>
+                <li class="main__SWEOnline"><a href="/SWEOnline">SWE Online</a></li>
+                <li class="main__SF"><a href="/san-francisco">San Fancisco</a></li>
+                <li class="main__NY"><a href="/new-york">New York</a></li>
+                <li class="main__jump"><a href="/jumpstart">Jumpstart</a></li>
+                <li class="main__online"><a href="/online">Online</a></li>
+                <li class="main__marketing"><a href="/marketing">Marketing</a></li>
+                <li class="main__sales"><a href="/sales">Sales</a></li>
+                <li class="main__talentmatch"><a href="/talentmatch">TalentMatch</a></li>
+                <li class="main__alumni"><a href="/alumni">Alumni</a></li>
+                <li class="main__all"><a href="/all">All</a></li>
+            </ul>
+        </nav>
+
+        <div class="interest-bar">
+            <div class="interest-bar__image">
+                <img class="interest-bar__picture" src="images/dog.png">
+                <div class="interest-bar__content-text">
+                    <div class="interests-bar__headline">Dog Programmers</div>
+                    <div class="interests-bar__story">Dogs are learning to code at an incredible pace.</div>
+                </div>
+            </div>
+            <div class="interest-bar__image">
+                <img class="interest-bar__picture" src="images/cat.png">
+                <div class="interest-bar__content-text">
+                    <div class="interests-bar__headline">Cats and Coding</div>
+                    <div class="interests-bar__story">Cats are on the rise as the #1 example for coding demos.</div>
+                </div>
+            </div>
+            <div class="interest-bar__image">
+                <img class="interest-bar__picture" src="images/plug.png">
+                <div class="interest-bar__content-text">
+                    <div class="interests-bar__headline">Plugging stuff In</div>
+                    <div class="interests-bar__story">Good or Bad? Find out now.</div>
+                </div>
+            </div>
+ 
+            <div class="stock-wrapper">
+        
+            <div class="interest-bar__stock-price">
+                <span >AAO</span>
+                <div class="interests-bar__price">+0.22%</div>
+             </div>
+             <div class="interest-bar__stock-price">
+                <span >SWE</span>
+                <div class="interests-bar__price">+0.8%</div>
+             </div>      
+             <div class="interest-bar__stock-price">
+                <span >CAI</span>
+                <div class="interests-bar__price">+0.5%</div>
+             </div>
+            </div>
+
+            <div class="temperature">
+
+                <div class="interest-bar__sun">
+                <img class="interest-bar__sunimage" src="images/sun-icon.png">
+                </div>
+
+                <div class="interest-bar__degree">
+                <div class="interest-bar__big-text">77°F</div>
+                </div>
+            </div>
+
+            
+
+        </div>
+
+    </main>
+
+
+
     <footer></footer>   
 </body>
 </html>

@@ -18,7 +18,7 @@ button:hover {
 .masthead{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 0.3fr 2.5fr
+    grid-template-rows: 1fr 0.5fr 2fr
 }
 
 .masthead__menu-and-search{
@@ -37,6 +37,10 @@ button:hover {
 }
 .masthead__menuButton:hover {
     background-color: #f7f7f5;
+}
+
+.search--hidden {
+  display: none;
 }
 
 .masthead__actions {
@@ -106,7 +110,51 @@ button:hover {
 
 }
 
+/* gear-dropdown.css */
+.pref {
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #efefef;
+    border-radius: 2px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    font-size: 12px;
+    padding: 0.5em;
+    position: absolute;
+    right: 40px;
+    top: 3.5em;
+    width: 200px;
+}
 
+.pref--hidden {
+  display: none;
+}
+
+.pref__section {
+  border-top: 1px solid #dedede;
+}
+
+.pref__section:first-child {
+  border-top: none;
+}
+
+.pref__section-header {
+  border: 1px solid #efefef;
+  padding: 5px;
+  font-weight: bold;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+.pref__section-link {
+  margin: .5em;
+  padding: .5em;
+  text-transform: uppercase;
+}
+
+.pref__section-link:hover {
+  background-color: #dedede;
+}
   
   
 
