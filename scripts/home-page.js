@@ -35,6 +35,15 @@ todayDate[0].innerHTML = `${makeDate()}`;
         closeDropDown();
     });
 
-    const searchBar = document.getElementsByClassName
+    const hideSearch = document.getElementsByClassName("masthead__searchButton");
+    const searchBar = document.getElementsByClassName("search");
+    searchBar[0].classList.add("search--hidden");  
+    
+    hideSearch[0].addEventListener("click", event => {
+        const searchBar = document.getElementsByClassName("search");
+
+        searchBar[0].classList.toggle("search--hidden");  
+    });
+    
 
 });
